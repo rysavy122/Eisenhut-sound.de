@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON-->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />    <title>Eisenhut Sound Design</title>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--J-QUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--MONSERAT FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@1,900&family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+
+    
+
+</head>
+<div class="loader-wrapper">
+</div>
+
+<body>
+    <header>
+      <nav >
+        <div class="container">
+          <ul class="topnav">
+            <a href="index.html"><img title ="Eisenhut Sound Design" src="assets/img/logo.png" id="logoNAV"></a>
+
+            <li class="home active "><a href="index.html#home">Home</a></li>
+            <li class="about"><a href="#about">About</a></li>
+
+            <div class="dropdown">
+                <button class="dropbtn">Referenzen
+                  </button>
+        <div class="dropdown-content">
+                <li class="events"><a href="index.html#events">Videos</a></li>
+                <li class="events2 "><a href="#events2"> Bilder                
+                </a></li>
+            </div>
+              </div>   
+            
+
+          <div class="dropdown">
+            <button onclick="steh()"class="dropbtn">Equipment</button>
+        <div class="dropdown-content">
+            <li class="equipment"><a href="index.html#equipment">kostenlos</a></li>
+            <li class="equipment2"><a href="#equipment2">mietbar</a></li>
+        </div>
+          </div>
+            <li class="service"><a href="#service">Service</a></li>
+            <li class="contact"><a href="#contact">Kontakt</a></li>
+            <a href="javascript:void(0);"class="icon" onclick="myFunction1()">&#9776;</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section id="home">
+        <div id="logofont">
+          <img style="height:100px;"title="eisenhut-sound-design" src="assets/img/logo.png" alt="eisenhut-sound-design">
+          <div id="animated"></div>
+          <h1 id="logotop" style="margin-bottom: 20px;">Eisenhut</h1>
+
+          <h1 id="logo">Sound Design</h1>        
+        </div>
+            <a href="#about"><img style="cursor:pointer;margin-top: -5vh;"src="assets/img/more.png" title="mehr Infos"alt=""></a>
+        </section>
+        <section id="about">
+            <h1 >Hallo </h1>
+            <img style="height:300px;border-radius: 50%;"src="assets/img/eisenhut-about.jpg" alt="eisenhut-sound-design">
+            <br style="margin-bottom: 100px;">
+            <p style="margin:50px;width:60%;"> ... mein Name ist Daniel Eisenhut, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Asperiores quasi similique debitis impedit numquam, quod 
+              ratione soluta rem eius illum incidunt laudantium ducimus
+               accusamus corporis harum explicabo vero nulla? Provident
+                odit non deserunt? Quidem at minima ex eius! Totam aperiam
+                 dolorem minus facilis voluptatum incidunt quidem maiores. 
+                 Voluptas, deserunt dolores?</p>
+        </section>
+        <section id="events">
+          <div style="width:100%;" class="container">
+            <h1 id="portfolio">Gallery</h1>
+            <p style="background-color:black;padding:10px; width:100%;margin-bottom: 20px;"class="lead">Hier sehen sie Impressionen  meiner vergangenen Veranstaltungen und können sich ein Bild von meiner Arbeit machen.</p>
+            <a href="#videos"><img  title="zur Video-Gallery"id="more" style="height:20px;width:35px;cursor:pointer;margin-bottom:300px;;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
+            <br>
+            <br id="videos">
+  <div  style="width:100%"class="gallery">
+    <h2 style="margin-top:6vh;font-size: 5em;margin:100px;">
+      Videos
+    </h2>
+  
+    <div id="Previews">
+  
+  
+      <div id="prev_one">
+    </div>
+<div id="vid" style="width:100%;background-color:black;">
+    <article class="video">
+      <figure>
+        <a class="fancybox fancybox.iframe" href="https://youtu.be/HQyOVexDEUs" target="_blank">
+        <img class="videoThumb" src="https://i9.ytimg.com/vi/HQyOVexDEUs/mq1.jpg?sqp=CLS4zY0G&rs=AOn4CLBCD-TNuA02Tpyv57hocB78FUJQ2g"></a>
+  
+      </figure>
+      <h2 class="videoTitle">Konzert 1</h2>
+      <p>XX.XX.20XX</p>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+    </article>
+    <article class="video">
+      <figure>
+        <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=qHX6FB4p5-o" target="_blank">
+        <img class="videoThumb" src="https://i9.ytimg.com/vi/qHX6FB4p5-o/mq3.jpg?sqp=CLS4zY0G&rs=AOn4CLC5nBR5OyFPGtNjQBGqZw7Nmr40Ng"></a>
+      </figure>
+      <h2 class="videoTitle">Konzert 2</h2>
+      <p>XX.XX.20XX</p>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+    </article>
+    
+    <article class="video">
+      <figure>
+        <a class="fancybox fancybox.iframe" href="https://youtu.be/gMuq1zKFLCQ" target="_blank">
+        <img class="videoThumb" src="https://i9.ytimg.com/vi/gMuq1zKFLCQ/mq2.jpg?sqp=CLS4zY0G&rs=AOn4CLA1GZ5p3EmPUpDSLdsoxqZUt_h3tg"></a>
+      </figure>                      
+      <h2 class="videoTitle">Konzert 3</h2>
+      <p>XX.XX.20XX</p>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+    </article>
+    <article class="video">
+      <figure>
+        <a class="fancybox fancybox.iframe" href="https://youtu.be/e2uoEwLBggA" target="_blank">
+        <img class="videoThumb" src="https://i9.ytimg.com/vi/e2uoEwLBggA/mq2.jpg?sqp=CLS4zY0G&rs=AOn4CLBny44A7uxgUFUI6D-pyyH65zIGoQ"></a>
+      </figure>
+      <h2 class="videoTitle">Konzert 4</h2>
+      <p>XX.XX.20XX</p>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+    </article>
+    <article class="video">
+      <figure>
+        <a class="fancybox fancybox.iframe" href="https://youtu.be/k-mePfVZnOw
+        " target="_blank">
+        <img class="videoThumb" src="https://i9.ytimg.com/vi/k-mePfVZnOw/mq2.jpg?sqp=CLS4zY0G&rs=AOn4CLCNU7wmDVT_oF8JaXRz37UPdBMk-Q"></a>
+      </figure>
+      <h2 class="videoTitle">Konzert 5</h2>
+      <p>XX.XX.20XX</p>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+    </article>
+    <article class="video">
+      <figure>
+        <a class="fancybox fancybox.iframe" href="https://youtu.be/C_g12R1K2Ec" target="_blank">
+        <img class="videoThumb" src="https://i9.ytimg.com/vi/C_g12R1K2Ec/mq2.jpg?sqp=CLCxzY0G&rs=AOn4CLBwTNRW0knZY4b1hCUdssdI615I4w"></a>
+      </figure>
+      <h2 class="videoTitle">Konzert6</h2>
+      <p>XX.XX.20XX</p>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+    </article>
+    <article class="video">
+      <figure>
+        <a class="fancybox fancybox.iframe" href="https://youtu.be/zqQK_wkyJRc" target="_blank">
+        <img class="videoThumb" src="https://i.ytimg.com/vi/zqQK_wkyJRc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLlBxg2DYvmEqsRH8E8gfCZVAp2w"></a>
+        
+      </figure>
+      <h2 class="videoTitle">Konzert 7</h2>
+      <p>XX.XX.20XX</p>
+      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+
+      
+    </article>
+    
+  </div>
+  </div>
+  <br style="margin-bottom:200px;">
+
+</div>
+  </section>
+  <section id="events2" style="height:160vh;">
+   
+
+
+    </div>
+    <div style=" width:100%;height:200vh;background-color: brown;" id=bilder"">
+      <h2 style="margin:100px;font-size:5em;margin-top: 200px;;">Bilder</h2>
+
+  
+
+        <div style="text-align:center">
+          <h2>Tabbed Image Gallery</h2>
+          <p>Click on the images below:</p>
+        </div>
+        
+        <!-- The four columns -->
+        <div class="row" style="margin-bottom:600px;">
+          <div class="column" style="margin-left: 10%;">
+            <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG" alt="Nature" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild1.jpeg" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+          </div>
+        <div class="column">
+          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+        </div>
+        <div class="column" style="margin-left: 10%;">
+          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild1.jpeg" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+        </div>
+      <div class="column">
+        <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+      </div>
+      </div>
+      <div class="container">
+
+      </div>
+       
+    </section>
+    
+              
+        <section  id="equipment">
+          <div style="margin-top:100px;background-color: rgba(0, 0, 0, 0.5);" class="container">
+          <h1 id="header_eq">Equipment</h1>
+          <br>
+          <h2 style="text-transform:none;background-color: black; padding:10px;">Kostenloses Standart Equipment zur Durchführung einer Veranstaltung: </h2>
+          <a href="#left"> <img  title="mehr Infos "id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
+          <ul id="left">
+            <br style="margin-bottom: 20vh;">
+            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Laptop</h2>
+            <br style="margin-bottom: 5vh;">
+            <li><p>MacBook Pro mit Q-LAB</p><br>
+              <img title="MacBook Pro mit Q-Lab"src="assets/img/laptop.png" alt="MacBook with Q-Lab"><br style="margin-bottom: 60px;">
+              <h3 style="margin-bottom:50px;font-size: 4em;font-family: 'Roboto', sans-serif;">Software</h3>
+
+            <div id="software">
+              <a target="_blank" href="https://www.shure.com/de-DE/produkte/software/wwb6"><br><img src="assets/img/WWB6.jpeg">WWB6</a>
+              <a target="_blank" href="https://qlab.app/"><br><img href="https://qlab.app/" target="_blank" src="assets/img/qlab.png">Q-Lab</a>
+              <a target="_blank" href="https://www.ableton.com/de/live/"><br><img src="assets/img/ableton.png">Ableton</a>
+              <a target="_blank" href="https://www.apple.com/de/logic-pro/"><br><img src="assets/img/logic.png">Logic</a> 
+              <a target="_blank" href="https://www.waves.com/mixers-racks/tracks-live#presenting-tracks-live"><br><img src="assets/img/tracks_live.png">Tracks</a>
+              <a target="_blank" href="https://www.audinate.com/meet-dante?link=hm-r2-l-dc"><br><img src="assets/img/dante.png">Dante</a> 
+              <a target="_blank" href="https://www.spotify.com/de/"><br><img src="assets/img/spotify.png">Spotify</a></li>
+            </ul>
+            
+           
+          <ul id="right">
+
+
+
+
+            <div id="ubiqui" style="background:rgba(0, 0, 0, 0.6);margin:20px 20px 100px 20px;padding:20px;display: flex;flex-direction: row;">
+              
+              <div id="ubiquiti" style="width:35%; margin-left:auto;">
+                <li><h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;">Ubiquiti</h2> 
+
+                  <p>Portabler Netzwerkrouter zur Fernsteuerung von Audio Mischpulten sowie zur
+                    Überwachung von Funkstrecken. </p>
+                    <br style="margin-bottom:50px;">   
+                  <img style="height:200px"src="assets/img/ubiquiti.png" alt="">
+
+                 </li>
+                </div>
+
+
+              <div id="ipad" style="width:35%; margin-right:auto;">
+
+              <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;"> iPad</h2>
+              <li><p style="text-transform: none;">Ubiquiti in Verbindung mit dem Apple iPad für ein  Potables Netzwerk-routing System. insklusive Monitoring/ Steuerung. </p><br>
+                <img style="margin-bottom:100px;height:400px;"title="Apple iPad"src="assets/img/iPad.png" alt="Apple iPad insklusive">
+              </div>
+            </div>
+            <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;">SoundBullet Audio I/O</h2>
+            <p>- Signalweg Tester -</p>
+            <br>
+            <a target="_blank" href="https://sonnectaudio.com/"></h2><img title="Sound Bullet von Sonnect Audio"style="height:350px;"src="assets/img/soundbullet.png" alt=""></a>
+     
+            <li style="font-family: 'Roboto';font-size: 1em;"> <a src="https://sonnectaudio.com/"></a></li>
+          <ul style=" width:100%; background-color: rgba(0, 0, 0, 0.76); padding:50px;"id="list">
+            <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;margin:0px 10px 50px 20px;" >insklusive Zubehör bestehend aus ...</h2>
+            <li> ... Distanzlaser, Kabeltester, Werkzeuge (bei Bedarf) sowie PSA aus Helm, Sicherheitsschuhen und Handschuhen.</li>
+          </ul>
+          </ul>
+          </div>
+        </section>
+        <section id="equipment2">
+          <div class="container" style="width:100%;background: rgba(0, 0, 0, 0.5);">
+          <h1 id="header_eq">Equipment</h1>
+          <h2 style="text-transform:none;background-color: black; padding:10px;">Kosenpflichtiges Equipment auf Mietbasis: </h2>
+          <a href="#left2"> <img  id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
+          <ul id="left2">
+            <br style="margin-bottom: 20vh;">
+          <div id="mixer">
+            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Mixer</h2>
+            <br style="margin-bottom: 5vh;">
+            <li><p>Allen & Heath SQ6 48 Kanal digital Audio Mischpult mit allen Kompressoren & Dynamischen Audio - Plugins </p><br>
+           <a target="_blank" href="https://www.allen-heath.com/sq-series/sq-6/"><img title="allen-health-sq6"src="assets/img/allen-health-sq6.png" alt="allen-health-sq6"><br style="margin-bottom: 60px;"></a>
+          </div>
+          <div id="stagebox" style="background-color:rgba(0, 0, 0, 0.788);margin-top:100px;text-align: center;height:100px;width:100%;">
+            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Stagebox </h2>
+            <li><p>- 2x Allen & Heath DX168/X 96kHZ 16in / 8out Stageboxen</p><br>
+          </div>
+          <div id="zoom">
+
+
+
+          </div>
+          <br>
+          
+
+
+          
+
+
+
+            <br style="margin-bottom: 1vh;">
+              <img style="height:400px;"title="stagebox von allen-heath"src="assets/img/stagebox.png" alt="Allen-health-Stagebox"><br style="height:400px;margin-bottom: 60px;">
+              <h3 style="margin-bottom:50px;font-size: 4em;font-family: 'Roboto', sans-serif;"></h3>
+              <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;margin:0px;">Smaart</h2>
+              <p>Sound System Messungs-,Optimisierungs- und Kontroll- Software.</p>
+             <a target="_blank" href="http://www.rationalacoustics.de"> <img style="height:150px;width:150px;border-radius: 50%;;"title="smaart" src="assets/img/smaart.jpg" alt=""></a>
+              <li><p></p><br>
+            <br style="margin-bottom: 5vh;">          
+          <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;">Diverse Mikrofone</h2>
+            <li><p style="text-transform: none;"> (NT5, Heil PR35, MD421, 2x SM58, Audix D6, Beta91)</p><br>
+        <ul id="right">
+         
+
+            <p style="font-size: 24px; text-align: center;"> 50m Cat5 & 10m Cat5</p>
+           </li>
+              <h2>Aufnahmegerät</h2>
+            </div>
+
+          <ul style=" width:100%;"id="list">
+
+          </ul>
+          </ul>
+          </div>
+        </section>
+        <section id="service">
+          <h1 style="margin-top:300px;">Leistungen</h1>
+          <p style="background-color:black;width: 100%;padding: 10px;">Eine Buchung für einen Auftrag umfasst Leistungen rund um das Gewerk „Tontechnik“ im Veranstaltungsbereich.</p>
+          <br>
+
+
+          <a href="#container_leistungen"><img  title="mehr Infos"id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
+          <br id="leistungen">
+          <p style="height:400px;"></p>  
+        
+          </div>
+        <div id="container_leistungen" style="width:100%;height:1200px; background-color: rgba(0, 0, 0, 0.7);;">
+          <h2 style="margin-top:10vh;margin-bottom:-100px;font-size:3em;font-weight:600px;"> leistungen im Überblick </h2>
+          <div id="leistungendiv" style="margin-bottom:90px;">
+             <div id="leistung1">
+               <i class="fa fa-wrench" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
+
+            <h2>Auf/Abbau </h2>
+            <p>Zum Service gehört das Auf/Abbauen der für die Show relevanten Besandteile, wie Laptop, Mischpult, Equalizer, Mikrofone usw. </p>
+            </div>
+            <div id="leistung2">
+              <i class="fa fa-info-circle" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
+
+            <h2>Betreuung</h2>
+            <p>Betreuung der Technik während der Veranstaltung. Ansprechpartner vor Ort bei Fragen, Wünschen oder Problemen.</p>
+          </div>
+          <div id="leistung3">
+            <i class="fa fa-handshake-o" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
+
+
+            <h2>Dry Hire</h2>
+            <p >Mieten von professionellem Audio Equipment.Weiteres Equipment auf Anfrage möglich.</p>
+          </div>
+          </div>
+
+          <h3 style="margin:60px;">Buchen Sie mich direkt für ihre Veranstaltung, oder Kontaktieren sie mich für Fragen und Anliegen. </h3>
+          <button id="service-kontakt">Zum Kontaktformular</button>
+        </div>
+        </section>
+
+        
+  </section>
+        <section id="contact">
+
+        <h1>KONTAKT</h1>
+        <p style=" background-color:black;padding:10px;width:100%;margin-bottom: 20px;"class="lead">Kontaktieren sie mich über das Kontaktformular, oder per e-mail / telefon.</p>
+          <a href="#kontakt"><img  id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
+          <br >
+          <br id="kontakt">
+
+           <!-- CONTACT FORM -->
+
+    <div id="KONTAKT">
+      <h2 style="margin:10px 20px 20px 20px;text-align:center;text-transform:none;font-size: 2em;font-family: 'Roboto', sans-serif;"">Hallo, wie  kann ich helfen ?</h2>
+      <div class="contact_container">
+             <form action="action_page.php" class="col-3">
+                <label for="name"></label>
+                <input style="text-align:start;"class="effect-1" type="text" id="fname" name="name" placeholder="Name"> 
+                <span class="focus-border"></span>         
+                <label for="email"><b></b></label>
+                <input style="text-align:start;"class="effect-1" type="text" placeholder="E-mail" name="email" id="email" required>
+                <span class="focus-border"></span>
+                </select>         
+                <label for="subject"></label>
+                <textarea style="text-align:center;" id="subject" name="subject" placeholder="Schreiben sie Ihre Nachricht hier." style="height:200px"></textarea>          
+                <input class="effect-1"type="submit" value="Senden">           
+              </form>
+            </div> 
+            <div id="contacts">              
+              <a  style="font-size:20px;float: left;" href="#"><i class="fa fa-send" style="font-size:28px;color:rosybrown"></i><p>info@Eisenhut-SD.de</p></a> 
+              <i  class="fa fa-phone" style="font-size:28px;color:rosybrown"></i>
+
+              <p style="font-size: 22px;" >+49 176 45885708</p>
+              
+            </div>   
+
+      </div>
+    </div>
+    </section>
+    <section id="footer">
+      <footer>
+        <div id="footer_content">
+         <a target="_blank" href="agb/AGB.pdf">AGB</a>
+         <a target="_blank" href="impressum.html">Impressum</a>
+
+         <div id="footer-kontakt" style="float:left;">
+          <h5 style="margin:20px;">Kontakt</h5>
+          <i class="fa fa-phone" style="font-size:24px"></i>
+          <p>Tel: +49 176 45885708</p>
+          <i class="fa fa-send" style="font-size:24px"></i>
+          <p>E-Mail: info@Eisenhut-SD.de</p>
+          <i class="fa fa-map-marker" style="font-size:24px"></i>
+<p>Standort: München, Deutschland</p>
+
+<br>
+
+         </div>
+
+         <nav >
+            <ul class="topnav" style="margin-left:300px;">
+              <li class="home active "><a href="index.html#home">Home</a></li>
+              <li class="about"><a href="#about">About</a></li>
+  
+              <div class="dropdown">
+                  <button class="dropbtn" style="      display: flex;
+                  flex-wrap: wrap;
+                  width: 80px;
+                  padding: 10px;">Referenzen
+                    </button>
+          <div class="dropdown-content">
+                  <li class="events"><a href="index.html#events">Videos</a></li>
+                  <li class="events2 "><a href="#events2"> Bilder                
+                  </a></li>
+              </div>
+                </div>   
+              
+  
+            <div class="dropdown">
+              <button class="dropbtn">Equipment</button>
+          <div class="dropdown-content">
+              <li class="equipment"><a href="index.html#equipment">kostenlos</a></li>
+              <li class="equipment2"><a href="#equipment2">mietbar</a></li>
+          </div>
+            </div>
+              <li class="service"><a href="#service">Service</a></li>
+              <li class="contact"><a href="#contact">Kontakt</a></li>
+              <a href="javascript:void(0);"class="icon" onclick="myFunction1()">&#9776;</a>
+            </ul>
+        </nav>
+
+         <p style="font-size: small;">&copy;   2022 DenisRysavy. Alle Rechte vorbehalten.</p>
+         <a href="index.html"><img title ="Eisenhut Sound Design" src="assets/img/logo.png" style="height:30px;margin-left:400px;"id="logoNAV"></a>
+
+         <!--<img style="height:40px"src="assets/img/logo.png" alt="">-->
+         
+         <a style="float:right;margin:10px 50px 30px 0px;"href="#home"><img src="assets/img/hoch.png" title="zum Anfang"alt=""></a>
+
+       </div>         
+     </footer>
+
+    </section>
+    </main>
+</body>
+
+<!--LOADER-->
+<script>
+  $(window).on("load",function(){
+$(".loader-wrapper").fadeOut("slow");
+});
+</script>
+<script>
+  $('body').append('<div style="" id="loadingDiv"><div class="loader"></div></div>');
+$(window).on('load', function(){
+  setTimeout(removeLoader, 10); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loadingDiv" ).remove(); //makes page more lightweight 
+  });  
+}
+</script>
+<script>
+  function steh() {
+    document.getElementById("equipment");
+  }
+
+</script>
+
+<!--SHRINK TOPNAV WHEN SCROLL-->
+<script>
+$(function(){
+  $(window).scroll(function() {
+     if($(window).scrollTop() >= 100) {
+       $('nav').addClass('scrolled');
+     }
+    else {
+      $('nav').removeClass('scrolled');
+    }
+  });
+});
+</script>
+<!--UNDERLINE NAVBAR SHOW AKTIVE SECTION-->
+<script>
+    const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+});
+</script>
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+
+document.getElementsByClassName("dropdown").addEventListener("click", function(e) {
+
+e.stopPropagation();
+});
+</script>
+<script>
+</script>
+<script>
+  $("#service-kontakt").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#kontakt").offset().top},
+        'slow');
+});
+</script>
+</html>
