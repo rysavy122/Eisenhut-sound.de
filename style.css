@@ -121,6 +121,10 @@ section {
   height:200vh;
 }
 
+#equipment {
+  height:200vh;
+}
+
 #ubiqui  h2{
     margin-top: 50px;
 }
@@ -135,7 +139,7 @@ section {
 #contact{
   background: url('assets/img/eisenhut-sound-design-contact.JPG') no-repeat center center/cover;;
   text-transform: none;
-  height:235vh;
+  height:205vh;
 }
 #contacts{
   font-size: 20px; 
@@ -168,7 +172,9 @@ section#events .container{
 
 }
 
-
+#AGB{
+  margin-top:100px;
+}
 
 #header_eq{
   margin-top: 36vh;
@@ -228,7 +234,12 @@ nav .container ul li.active a {
   margin-right:400px;
   margin-left:20px;
   transition:0.5s;
+}
 
+@media screen and (max-width: 600px) {
+#logoNAV{
+  height:35px;
+}
 }
 
 
@@ -245,15 +256,27 @@ nav .container ul li.active a {
   margin-bottom:50px;
   margin-top:25vh;
   width:45%;
-
 }
-
-
-
 
 #logotop{
   font-size: 130px;
   text-transform: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  #logofont {
+    width:95%;
+    padding:10px;
+    margin-top:20vh;
+    font-size: 10px;
+  }
+
+  #logotop{
+    font-size: 90px;
+    text-transform: none;
+
+  }
 }
 
 #animated{
@@ -276,6 +299,32 @@ nav .container ul li.active a {
   margin: 20px;
   margin-top:0px;
 }
+
+
+#animated_Button{
+  cursor:pointer;
+  margin-top: -5vh;
+  animation: animatedButton;
+}
+
+@keyframes animatedButton {
+  0%{
+
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+
+
 
 #container_leistungen p {
   text-align:justify;
@@ -302,6 +351,22 @@ nav {
   height: 100px;
   font-size: 20px;
   background: rgba(0,0,0,0.9);
+}
+
+@media screen and(max-width:600px){
+  nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    background: rgba(0,0,0,0.9);
+
+
+    
+  }
 }
 
 ul#left a {
@@ -360,29 +425,26 @@ section {
   background-color: #1d1a1a5e;
   border-style: none;
   padding: 10px;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
   opacity: 0.9;
   text-align: left;
   color:#dfd2d2;
   width: 700px;
-  height:700px;
+  height:630px;
+  margin:50px;
+  margin-top:0px;
+
 } 
 #KONTAKT{
   margin-top:30vh;
   width:80%;
   height:1000px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   background: rgb(158, 108, 108);
   background: rgb(199, 59, 59);;
   background:transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
-
-
 }
 label {
   font-size: 1em;
@@ -392,7 +454,6 @@ label {
 input[type=text], select, textarea {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
   width: 100%;
    font-size: large;
   padding: 16px;
@@ -402,12 +463,14 @@ input[type=text], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 16px; /* Add a top margin */
   margin-bottom: 26px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+ /* resize: vertical;  Allow the user to vertically resize the textarea (not horizontally) */
+  text-align: start;
+
 
 }
 
  textarea{
-  height:250px;
+  height:300px;
 
 }
 
@@ -442,14 +505,12 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: rgb(155, 105, 105);
+  color:white;
 }
 
 :focus{outline:none;}
 
 
-.effect-3 {
-
-}
 
 .focus-border{
   background-color:red;height:5px;transition: 0.4s;
@@ -594,6 +655,7 @@ button {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
 display:none;*/
 @media screen and (max-width: 600px) {
+
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -626,6 +688,8 @@ display:none;*/
     text-align: left;
   }
 }
+
+
 
 
 
@@ -886,7 +950,9 @@ nav {
   z-index: 20;
   transition: 1s all ease;
   min-width: 360px;
+}
 
+@media screen and(max-width:600px){
 
 }
 
@@ -936,7 +1002,12 @@ nav {
   margin-top: 20px;
   margin-left: 20px;
   transition:0.5s;
+}
 
+@media screen and (max-width:600px){
+  .scrolled #logoNAV{
+    height:25px;
+  }
 }
 
 p {
@@ -968,4 +1039,136 @@ p {
   margin-top:20px;
 }
 
+/*BILDER-GALLERY*/
+
+
+.container_bilder {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top:48%;
+  width: 10;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  position:absolute;
+  top:48%;
+  left:0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+
+.row_bilder:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column_bilder {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+/* ANIMATIONS*/
+
+#animateBtn{
+  opacity: 0;
+  animation-name:animateBtn ;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes animateBtn{
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+
+/* MEDIEA QUERRYS RESPONSIVE LAYPUT */
+
+/* SMARTPHONE ( 600px breit maximal )*/
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+  }
+
+  .icon {
+    display:block;
+    height:50px;
+    width:50px;
+  }
+
+  
+
+}
 
