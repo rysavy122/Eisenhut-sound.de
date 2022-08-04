@@ -1,669 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--ICON-->
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />    <title>Eisenhut Sound Design</title>
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
-    <!--J-QUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--MONSERAT FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@1,900&family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--ICON-->
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    
-
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  <title>Eisenhut Sound Design</title>
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+  <!--J-QUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--MONSERAT FONT-->
+  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@1,900&family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+  <script src="index.js"></script>
 </head>
-<div class="loader-wrapper">
+<div class="loader-wrapper"><p style="font-size:17px;padding-top:45vh;"id="loader"><span style="font-size:24px;">Willkommen auf  Eisenhut-Sound.de !</span><br><br><br>
+  Diese Webseite ist für meinen Freund Daniel, welcher als Sounddesigner/Tontechniker selbstständig tätig ist.<br>
+  <br><br><br>
+  Viel Spass beim Erkunden ! <br><br>
+  Grüße aus Bremen, Denis Rysavy, 26. Webentwickler.</p> 
+  <br>
 </div>
 <body>
-    <header>
-      <div class="container">
-      <nav >
-          <ul class="topnav" id="myTopnav">
-            <a href="index.html"><img title ="Eisenhut Sound Design" src="assets/img/logo.png" id="logoNAV"></a>
-
-            <li class="home active "><a href="index.html#home">Home</a></li>
-            <li class="about"><a href="#about">About</a></li>
-
-            <div class="dropdown">
-                <button class="dropbtn">Referenzen
-                  </button>
-        <div class="dropdown-content">
-                <li class="events"><a href="index.html#events">Videos</a></li>
-                <li class="events2 "><a href="#events2"> Bilder                
-                </a></li>
-            </div>
-              </div>   
-            
-
-          <div class="dropdown">
-            <button onclick="steh()"class="dropbtn">Equipment</button>
-        <div class="dropdown-content">
-            <li class="equipment"><a href="index.html#equipment">kostenlos</a></li>
-            <li class="equipment2"><a href="#equipment2">mietbar</a></li>
-        </div>
+  <header>
+    <div class="container">
+    <nav>
+    <div class="topnav" id="myTopnav">
+      <ul>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+         <button  onclick="dropFunction()"class="dropbtn">Referenzen
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="Drop" class="dropdown-content">
+            <a  href="index.html#events2">Bilder</a>
+            <a  href="index.html#events">Videos</a>
           </div>
-            <li class="service"><a href="#service">Service</a></li>
-            <li class="contact"><a href="#contact">Kontakt</a></li>
-            <a href="javascript:void(0);"class="icon" onclick="myFunction1()">
-              <i class="fa fa-bars"></i>&#9776;</a>
-          </ul>
+        </div>      
+        <div class="dropdown">
+          <button onclick="dropFunction2()"class="dropbtn">Equipment
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="Drop2"class="dropdown-content">
+            <a href="index.html#equipment">kostenlos</a>
+            <a href="#equipment2">mietbar</a>
+          </div>
         </div>
-      </nav>
-    </header>
-    <main>
-        <section id="home">
-        <div id="logofont">
-          <img style="height:100px;"title="eisenhut-sound-design" src="assets/img/logo.png" alt="eisenhut-sound-design">
-          <div id="animated"></div>
-          <h1 id="logotop" style="margin-bottom: 20px;">Eisenhut</h1>
-
-          <h1 id="logo">Sound Design</h1>        
-        </div>
-        <div id="animateBtn">
-            <a href="#about"><img id="animated_Button" src="assets/img/more.png" title="mehr Infos"alt=""></a>
-        </div>
-        </section>
-        <section id="about">
-            <h1 >Hallo </h1>
-            <img style="height:300px;border-radius: 50%;"src="assets/img/eisenhut-about.jpg" alt="eisenhut-sound-design">
-            <br style="margin-bottom: 100px;">
-            <p style="margin:50px;width:60%;"> ... mein Name ist Daniel Eisenhut, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Asperiores quasi similique debitis impedit numquam, quod 
-              ratione soluta rem eius illum incidunt laudantium ducimus
-               accusamus corporis harum explicabo vero nulla? Provident
-                odit non deserunt? Quidem at minima ex eius! Totam aperiam
-                 dolorem minus facilis voluptatum incidunt quidem maiores. 
-                 Voluptas, deserunt dolores?</p>
-        </section>
-       <section id="events">
-          <div style="width:100%;" class="container">
-            <h1 id="portfolio">Galerie</h1>
-            <p style="background-color:black;padding:10px; width:100%;margin-bottom: 20px;"class="lead">Hier sehen sie Impressionen  meiner vergangenen Veranstaltungen und können sich ein Bild von meiner Arbeit machen.</p>
-            <a href="#videos"><img  title="zur Video-Gallery"id="more" style="height:20px;width:35px;cursor:pointer;margin-bottom:300px;;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
-            <br>
-            <br id="videos">
-  <div  style="width:100%;"class="gallery">
-    <h2 style="margin-top:6vh;font-size: 5em;margin:100px;">
-      Videos
-    </h2>
-
-
-  
-    <div id="Previews">
-  
-  
-
+        <a href="#service">Service</a>       
+        <a href="#contact">Kontakt</a>
+        <a style="height:65px;margin-top:0px;"href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </ul>
+    </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+    <div id="logofont">
+      <br>
+      <br>
+      <br>
+      <img style="height:100px;"title="eisenhut-sound-design" src="https://gdurl.com/BwtZ" alt="eisenhut-sound-design">
+      <div id="animated"></div>
+      <h1 id="logotop" style="margin-bottom: 20px;">Eisenhut</h1>
+      <h1 id="logo">Sound Design</h1>   
+    </div>
+    <div id="animateBtn">
+        <a href="#about"><img id="animated_Button" src="https://gdurl.com/7Otn" title="mehr Infos"></a>
+    </section>
+    <section id="about">
+        <h1 >Hallo </h1>
+        <img style="height:300px;border-radius: 50%;"src="https://gdurl.com/0HV7" alt="eisenhut-sound-design">
+        <br style="margin-bottom: 100px;">
+        <p style="margin:50px;width:60%;"> ... mein Name ist Daniel Eisenhut, Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Asperiores quasi similique debitis impedit numquam, quod 
+          ratione soluta rem eius illum incidunt laudantium ducimus
+          accusamus corporis harum explicabo vero nulla? Provident
+          odit non deserunt? Quidem at minima ex eius! Totam aperiam
+          dolorem minus facilis voluptatum incidunt quidem maiores. 
+          Voluptas, deserunt dolores?</p>
+    </section>
+   <section id="events">
+      <div style="width:100%;" class="container">
+        <h1 id="portfolio">Galerie</h1>
+        <p style="background-color:black;padding:10px; width:100%;margin-bottom: 20px;"class="lead">Hier sehen sie Impressionen  meiner vergangenen Veranstaltungen und können sich ein Bild von meiner Arbeit machen.</p>
+        <a href="#videos"><img  title="zur Video-Gallery"id="more" style="height:20px;width:35px;cursor:pointer;margin-bottom:300px;;margin-top: 5vh;"src="https://gdurl.com/7Otn" alt=""></a>
+        <br>
+        <br id="videos">
+<div  style="width:100%;"class="gallery">
+<h2 style="margin-top:6vh;font-size: 5em;margin:100px;">
+  Videos
+</h2>
+<div id="Previews">
 <div id="vid" style="width:100%;background-color:black;">
-    <article class="video">
-      <figure>
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video1.mp4"></video>  
-      </figure>
-      <h2 class="videoTitle">Konzert 1</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
-    </article>
-    <article class="video">
-      <figure>
-
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video2.mp4"></video>
-      </figure>
-      <h2 class="videoTitle">Konzert 2</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
-    </article>
-    
-    <article class="video">
-      <figure>
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video3.mp4"></video>
-      </figure>                      
-      <h2 class="videoTitle">Konzert 3</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
-    </article>
-    <article class="video">
-      <figure>
-
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video4.mp4"></video>
-      </figure>
-      <h2 class="videoTitle">Konzert 4</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
-    </article>
-    <article class="video">
-      <figure>
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video5.mp4"></video>
-      </figure>
-      <h2 class="videoTitle">Konzert 5</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
-    </article>
-    <article class="video">
-      <figure>
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video6.mp4"></video>
-      </figure>
-      <h2 class="videoTitle">Konzert6</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
-    </article>
-    <article class="video">
-      <figure>
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video7.mp4"></video>     
-      </figure>
-      <h2 class="videoTitle">Konzert 7</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6> 
-    </article>
-    <article class="video">
-      <figure>
-        <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video8.mp4"></video>     
-      </figure>
-      <h2 class="videoTitle">Konzert 8</h2>
-      <p>XX.XX.20XX</p>
-      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6> 
-    </article>
-    
-  </div>
-  </div>
-
+<div id="videos">
+<article class="video">
+<figure><iframe width="100%" height="300" src="https://www.youtube.com/embed/7D9rOfZmJtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 1</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+<figure>
+  <iframe width="100%" height="300" src="https://www.youtube.com/embed/sDQVV9oFghw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 2</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+<figure><iframe width="100%" height="300" src="https://www.youtube.com/embed/MycqHE3Pyzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 3</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+<figure><iframe width="100%" height="300" src="https://www.youtube.com/embed/dabLZTydFU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 4</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+<figure><iframe width="100%" height="300" src="https://www.youtube.com/embed/MqCGaN1ZIic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 5</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+<figure><iframe width="100%" height="300" src="https://www.youtube.com/embed/lA9omLt-bdw/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 6</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+<figure><iframe width="100%" height="300" src="https://www.youtube.com/embed/02uLs-n_r4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 7</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+<figure><iframe width="100%" height="300" src="https://www.youtube.com/embed/fw8hLTqCiBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<h2 class="videoTitle">Konzert 8</h2>
+<p>XX.XX.20XX</p>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
 </div>
-  </section>
-  <section id="events2" style="height:239vh;margin-bottom:-200px;" >
-   
+<!--  VIDEO GALLERY BOILERPLATE 
+
+// YOUTUBE  EMBED CODE  4 IFRAME
+
+<iframe width="23%" height="300" src="https://www.youtube.com/embed/7D9rOfZmJtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="23%" height="300" src="https://www.youtube.com/embed/MycqHE3Pyzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="23%" height="300" src="https://www.youtube.com/embed/dabLZTydFU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="23%" height="300" src="https://www.youtube.com/embed/MqCGaN1ZIic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="23%" height="300" src="https://www.youtube.com/embed/lA9omLt-bdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="23%" height="300" src="https://www.youtube.com/embed/02uLs-n_r4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="23%" height="300" src="https://www.youtube.com/embed/fw8hLTqCiBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src=""></video>  
+
+  </figure>
+  <h2 class="videoTitle">Konzert 1</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video2.mp4"></video>
+  </figure>
+  <h2 class="videoTitle">Konzert 2</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>   
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video3.mp4"></video>
+  </figure>                      
+  <h2 class="videoTitle">Konzert 3</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video4.mp4"></video>
+  </figure>
+  <h2 class="videoTitle">Konzert 4</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video5.mp4"></video>
+  </figure>
+  <h2 class="videoTitle">Konzert 5</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video6.mp4"></video>
+  </figure>
+  <h2 class="videoTitle">Konzert6</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6>
+</article>
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video7.mp4"></video>     
+  </figure>
+  <h2 class="videoTitle">Konzert 7</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6> 
+</article>
+<article class="video">
+  <figure>
+    <video controls="true" title="doubleclick for fullscreen "src="assets/vid/video8.mp4"></video>     
+  </figure>
+  <h2 class="videoTitle">Konzert 8</h2>
+  <p>XX.XX.20XX</p>
+  <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deleniti.</h6> 
+</article>     -->
+</div>
+</div>
+</div>
+</section>
+<section id="events2" style="height:230vh;" >
+</div>
+<div style=" width:100%;height:260vh;background-color: black;" id="bilder" class="container_bilder">
+  <h2 style="margin:100px;font-size:5em;margin-top: 200px;">Bilder</h2>
+  <!-- Image text -->
+  <!-- Thumbnail images -->
+  <div class="row_bilder">
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/bkqY" style="width:100%" onclick="currentSlide(1)" onclick="scrollTo()" alt="KonzertInformation und <br> Datum">
     </div>
-    <div style=" width:100%;height:260vh;background-color: black;" id="bilder" class="container_bilder">
-      <h2 style="margin:100px;font-size:5em;margin-top: 200px;;">Bilder</h2>
-    
-      <!-- Image text -->
-
-    
-      <!-- Thumbnail images -->
-      <div class="row_bilder">
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb.jpeg" style="width:100%" onclick="currentSlide(1)" onclick="scrollTo()" alt="KonzertInformation und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb1.jpeg" style="width:100%" onclick="currentSlide(2)" alt="KonzertInformation 1 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb2.jpeg" style="width:100%" onclick="currentSlide(3)" alt="KonzertInformation 2 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb3.jpeg" style="width:100%" onclick="currentSlide(4)" alt="KonzertInformation 3 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb4.jpeg" style="width:100%" onclick="currentSlide(5)" alt="KonzertInformation 4 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb5.jpeg" style="width:100%" onclick="currentSlide(6)" alt="KonzertInformation 5 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb7.jpeg" style="width:100%" onclick="currentSlide(7)" alt="KonzertInformation 6 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb10.jpeg" style="width:100%" onclick="currentSlide(8)" alt="KonzertInformation 7 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb11.jpeg" style="width:100%" onclick="currentSlide(9)" alt="KonzertInformation 8 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb13.jpeg" style="width:100%" onclick="currentSlide(10)" alt="KonzertInformation 9 und <br> Datum">
-        </div>
-        <div class="column_bilder">
-          <img class="demo cursor" src="assets/img/gallerie/thumbnails/thumb15.jpeg" style="width:100%" onclick="currentSlide(11)" alt="SKonzertInformation 10 und <br> Datum">
-        </div>
-
-      </div>
-      <br style="margin:100px 10px 100px 10px;" id="container_bilder">
-
-
-
-      <div class="container_bilder" style="width:90%;margin:auto;">
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      <div class="mySlides">
-        <div class="numbertext">1 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">2 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild1.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">3 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild2.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">4 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild3.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">5 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild4.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">6 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild5.jpeg" style="width:80%;height:850px;">
-      </div>
-      <div class="mySlides">
-        <div class="numbertext">7 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild6.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">8 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild7.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">9 / 11</div>
-          <img src="assets/img/gallerie//fullscreen/eisenhut-bild8.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">10 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild9.jpeg" style="width:80%;height:850px;">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">11 / 11</div>
-          <img src="assets/img/gallerie/fullscreen/eisenhut-bild10.jpeg" style="width:80%;height:850px;">
-      </div>
-
-      <div style="background-color: black;" class="caption-container">
-        <p id="caption"></p>
-
-      </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/E6Cv" style="width:100%" onclick="currentSlide(2)" alt="KonzertInformation 1 und <br> Datum">
     </div>
-
-
-      <!--   <div style="text-align:center">
-          <h2>Tabbed Image Gallery</h2>
-          <p>Click on the images below:</p>
-        </div>
-        
-        <!-- The four columns 
-        <div class="row" style="margin-bottom:600px;">
-          <div class="column" style="margin-left: 10%;">
-            <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG" alt="Nature" onclick="myFunction(this);">
-          </div>
-          <div class="column">
-            <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild1.jpeg" onclick="myFunction(this);">
-          </div>
-          <div class="column">
-            <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
-          </div>
-        <div class="column">
-          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
-        </div>
-        <div class="column" style="margin-left: 10%;">
-          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG" alt="Nature" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild1.jpeg" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
-        </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/5vg9" style="width:100%" onclick="currentSlide(3)" alt="KonzertInformation 2 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/y7jW" style="width:100%" onclick="currentSlide(4)" alt="KonzertInformation 3 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/UnoI" style="width:100%" onclick="currentSlide(5)" alt="KonzertInformation 4 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/hGjb" style="width:100%" onclick="currentSlide(6)" alt="KonzertInformation 5 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/NkKD"  style="width:100%" onclick="currentSlide(7)" alt="KonzertInformation 6 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/Vg8O" style="width:100%" onclick="currentSlide(8)" alt="KonzertInformation 7 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/FEM5" style="width:100%" onclick="currentSlide(9)" alt="KonzertInformation 8 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/VWw1" style="width:100%" onclick="currentSlide(10)" alt="KonzertInformation 9 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/Wa83" style="width:100%" onclick="currentSlide(11)" alt="SKonzertInformation 10 und <br> Datum">
+    </div>
+    <div class="column_bilder">
+      <img class="demo cursor" src="https://gdurl.com/SaDB" style="width:100%" onclick="currentSlide(11)" alt="SKonzertInformation 10 und <br> Datum">
+    </div>
+  </div>
+  <br>
+  <br style="margin:100px 10px 400px 10px;" id="container_bilder">
+  <div class="container_bilder" style="width:90%;margin:auto;">
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+      <img src="https://gdurl.com/6yOh">
+  </div>   
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+      <img src="https://gdurl.com/uK4Q">
+  </div>   
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+      <img src="https://gdurl.com/xnP4">
+  </div>  
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+      <img src="https://gdurl.com/dTcs">
+  </div>   
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+      <img src="https://gdurl.com/3yy6">
+  </div>   
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+      <img src="https://gdurl.com/JKRb">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+      <img src="https://gdurl.com/xg8w">
+  </div>    
+  <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+      <img src="https://gdurl.com/G4WF">
+  </div>   
+  <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+      <img src="https://gdurl.com/AQ_o">
+  </div>   
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+      <img src="https://gdurl.com/GjTb">
+  </div>   
+  <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+      <img src="https://gdurl.com/JsEs">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+      <img src="https://gdurl.com/nWR5">
+  </div>
+  <div style="background-color: black;" class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  <!--   <div style="text-align:center">
+      <h2>Tabbed Image Gallery</h2>
+      <p>Click on the images below:</p>
+    </div>
+    The four columns 
+    <div class="row" style="margin-bottom:600px;">
+      <div class="column" style="margin-left: 10%;">
+        <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG" alt="Nature" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild1.jpeg" onclick="myFunction(this);">
+      </div>
       <div class="column">
         <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
       </div>
-      <div class="column">
-        <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
-      </div>
-      </div>
-      <div class="container"> -->
-
-      </div>
-       
-    </section>
-    
-              
-        <section  id="equipment" >
-          <div style="margin-top:100px;background-color: rgba(0, 0, 0, 0.5);" class="container">
-          <h1 id="header_eq">Equipment</h1>
-          <br>
-          <h2 style="text-transform:none;background-color: black; padding:10px;">Kostenloses Equipment zur Durchführung einer Veranstaltung: </h2>
-          <a href="#left"> <img  title="mehr Infos "id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
-          <ul id="left">
-            <br style="margin-bottom: 20vh;">
-            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Laptop</h2>
-            <br style="margin-bottom: 5vh;">
-            <li><p>MacBook Pro mit Q-LAB</p><br>
-              <img title="MacBook Pro mit Q-Lab"src="assets/img/laptop.png" alt="MacBook with Q-Lab"><br style="margin-bottom: 60px;">
-              <h3 style="margin-bottom:50px;font-size: 4em;font-family: 'Roboto', sans-serif;">Software</h3>
-
-            <div id="software">
-              <a title="Wireless Workbench 6"target="_blank" href="https://www.shure.com/de-DE/produkte/software/wwb6"><br><img src="assets/img/WWB6.jpeg">WWB6</a>
-              <a title="Q-Lab"target="_blank" href="https://qlab.app/"><br><img href="https://qlab.app/" target="_blank" src="assets/img/qlab.png">Q-Lab</a>
-              <a title="Ableton live"target="_blank" href="https://www.ableton.com/de/live/"><br><img src="assets/img/ableton.png">Ableton</a>
-              <a title="Logic Pro X"target="_blank" href="https://www.apple.com/de/logic-pro/"><br><img src="assets/img/logic.png">Logic</a> 
-              <a title="Tracks Live"target="_blank" href="https://www.waves.com/mixers-racks/tracks-live#presenting-tracks-live"><br><img src="assets/img/tracks_live.png">Tracks</a>
-              <a title="Dante by Audinate"target="_blank" href="https://www.audinate.com/meet-dante?link=hm-r2-l-dc"><br><img src="assets/img/dante.png">Dante</a> 
-              <a title="Spotify"target="_blank" href="https://www.spotify.com/de/"><br><img src="assets/img/spotify.png">Spotify</a></li>
-            </ul>
-            
-           
-          <ul id="right">
-
-
-
-
-            <div id="ubiqui" style="background:rgba(0, 0, 0, 0.6);margin:20px 20px 100px 20px;padding:20px;display: flex;flex-direction: row;">
-              
-              <div id="ubiquiti" style="width:35%; margin-left:auto;">
-                <li><h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;">Ubiquiti</h2> 
-
-                  <p>Portabler Netzwerkrouter zur Fernsteuerung von Audio Mischpulten sowie zur
-                    Überwachung von Funkstrecken. </p>
-                    <br style="margin-bottom:50px;">   
-                  <img style="height:200px"src="assets/img/ubiquiti.png" alt="">
-
-                 </li>
-                </div>
-
-
-              <div id="ipad" style="width:35%; margin-right:auto;">
-
-              <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;"> iPad</h2>
-              <li><p style="text-transform: none;">Ubiquiti in Verbindung mit dem Apple iPad für ein  Potables Netzwerk-routing System. insklusive Monitoring/ Steuerung. </p><br>
-                <img style="margin-bottom:100px;height:400px;"title="Apple iPad"src="assets/img/iPad.png" alt="Apple iPad insklusive">
-              </div>
+    <div class="column">
+      <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+    </div>
+    <div class="column" style="margin-left: 10%;">
+      <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG" alt="Nature" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild1.jpeg" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+    </div>
+  <div class="column">
+    <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img style="height:250px;width:250px;"src="assets/img/eisenhut-sound-design-bild.JPG"  onclick="myFunction(this);">
+  </div>
+  </div>
+  <div class="container"> -->
+  </div> 
+</section>           
+    <section  id="equipment">
+      <div style="background-color: rgba(0, 0, 0, 0.5);" class="container">
+      <h1 id="header_eq">Equipment</h1>
+      <br>
+      <h2  style="text-transform:none;background-color: black; padding:10px;">Kostenloses Equipment zur Durchführung einer Veranstaltung: </h2>
+      <a href="#left"><img  title="mehr Infos"id="more" style="background-color:black;height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="https://gdurl.com/7Otn" alt=""></a>
+      <ul id="left">
+        <br style="margin-bottom: 40vh;">
+        <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Laptop</h2>
+        <br style="margin-bottom: 5vh;">
+        <li><p>MacBook Pro mit Q-LAB</p><br>
+          <img title="MacBook Pro mit Q-Lab"src="https://gdurl.com/6tKn" alt="MacBook with Q-Lab"><br style="margin-bottom: 300px;">
+          <h3 id="softwareHeader"style="margin-bottom:50px;font-size: 4em;font-family: 'Roboto', sans-serif;">Software</h3>
+        <div id="software">
+          <a title="Wireless Workbench 6"target="_blank" href="https://www.shure.com/de-DE/produkte/software/wwb6"><br><img src="https://gdurl.com/f77c">WWB6</a>
+          <a title="Q-Lab"target="_blank" href="https://qlab.app/"><br><img href="https://qlab.app/" target="_blank" src="https://gdurl.com/L3YU">Q-Lab</a>
+          <a title="Ableton live"target="_blank" href="https://www.ableton.com/de/live/"><br><img src="https://gdurl.com/Ohfc">Ableton</a>
+          <a title="Logic Pro X"target="_blank" href="https://www.apple.com/de/logic-pro/"><br><img src="https://gdurl.com/F7Li">Logic</a> 
+          <a title="Tracks Live"target="_blank" href="https://www.waves.com/mixers-racks/tracks-live#presenting-tracks-live"><br><img src="https://gdurl.com/Ylxh">Tracks</a>
+          <a title="Dante by Audinate"target="_blank" href="https://www.audinate.com/meet-dante?link=hm-r2-l-dc"><br><img src="https://gdurl.com/QJEd">Dante</a> 
+          <a title="Spotify"target="_blank" href="https://www.spotify.com/de/"><br><img src="https://gdurl.com/Jpt6">Spotify</a></li>
+        </ul>          
+      <ul id="right">
+        <div id="ubiqui" style="background:rgba(0, 0, 0, 0.6);margin:20px 20px 100px 20px;padding:20px;display: flex;flex-direction: row;">             
+          <div id="ubiquiti" style="width:35%; margin-left:auto;">
+            <li><h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;">Ubiquiti</h2> 
+              <p>Portabler Netzwerkrouter zur Fernsteuerung von Audio Mischpulten sowie zur
+                Überwachung von Funkstrecken. </p>
+                <br style="margin-bottom:50px;">   
+              <img style="height:200px"src="https://gdurl.com/Z62o" alt="">
+             </li>
             </div>
-            <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;background-color: rgba(0, 0, 0, 0.86);padding:20px;padding-top: 50px;">SoundBullet Audio I/O</h2>
-            <p style="background-color: rgba(0, 0, 0, 0.86);">- Signalweg Tester -</p>
-            <br>
-            <a target="_blank" href="https://sonnectaudio.com/"></h2><img title="Sound Bullet von Sonnect Audio"style="height:350px;"src="assets/img/soundbullet.png" alt=""></a>
-     
-            <li style="font-family: 'Roboto';font-size: 1em;"> <a src="https://sonnectaudio.com/"></a></li>
-          <ul style=" width:100%; background-color: rgba(0, 0, 0, 0.76); padding:50px;"id="list">
-            <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;margin:0px 10px 50px 20px;" >Zubehör </h2>
-            <li> ... Distanzlaser, Kabeltester, Werkzeuge (bei Bedarf) sowie PSA aus Helm, Sicherheitsschuhen und Handschuhen.</li>
-          </ul>
-          </ul>
+          <div id="ipad" style="width:35%; margin-right:auto;">
+          <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;"> iPad</h2>
+          <li><p style="text-transform: none;">Ubiquiti in Verbindung mit dem Apple iPad für ein  Potables Netzwerk-routing System. insklusive Monitoring/ Steuerung. </p><br>
+            <img style="margin-bottom:100px;height:400px;"title="Apple iPad"src="https://gdurl.com/wTVv" alt="Apple iPad insklusive">
           </div>
-        </section>
-        <section id="equipment2">
-          <div class="container" style="width:100%;background: rgba(0, 0, 0, 0.5);">
-          <h1 id="header_eq">Equipment</h1>
-          <h2 style="text-transform:none;background-color: black; padding:10px;">Kostenpflichtiges Equipment auf Mietbasis: </h2>
-          <a href="#left2"> <img  id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" alt="" title="mehr Infos"></a>
-          <ul id="left2">
-            <br style="margin-bottom: 22vh;">
-          <div id="mixer">
-            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Mixer</h2>
-            <br style="margin-bottom: 1vh;">
-            <li><p>Allen & Heath SQ6 48 Kanal digital Audio Mischpult mit allen Kompressoren & Dynamischen Audio - Plugins </p><br>
-           <a target="_blank" href="https://www.allen-heath.com/sq-series/sq-6/"><img title="allen-health-sq6"src="assets/img/allen-health-sq6.png" alt="allen-health-sq6"><br style="margin-bottom: 60px;"></a>
-          </div>
-          <div id="stagebox" style="margin-top:100px;text-align: center;height:100px;width:100%;padding-top:10px;">
-            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Stagebox </h2>
-            <br style="margin-bottom: 1vh;">
-          </div>
-          <br>
-            <br style="margin-bottom: 1vh;">
-            <p style="margin:10px;">- 2x Allen & Heath DX168/X 96kHZ 16in / 8out Stageboxen</p>
-
-              <img style="height:400px;"title="stagebox von allen-heath"src="assets/img/stagebox.png" alt="Allen-health-Stagebox"><br style="height:400px;margin-bottom: 60px;">
-              <h3 style="margin-bottom:50px;font-size: 4em;font-family: 'Roboto', sans-serif;"></h3>
-              <div id="zoom">
-                <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Aufnahmegerät</h2>
-                <p style="margin-bottom: 50px;">Zoom H-6</p>
-                <img src="assets/img/zoom-H6.png" alt="">
-              </div>
-            <div  style="padding:50px;background-color: rgba(0, 0, 0, 0.7);"id="smaart">
-              <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;margin:0px;">Smaart</h2>
-              <p>Sound System Messungs-,Optimisierungs- und Kontroll- Software.</p>
-             <a target="_blank" href="http://www.rationalacoustics.de"> <img style="height:150px;width:150px;border-radius: 50%;;"title="smaart" src="assets/img/smaart.jpg" alt=""></a>
-              <li><p></p><br>
-              </div>
-            <br style="margin-bottom: 5vh;">          
-          <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;">Diverse Mikrofone</h2>
-            <li><p style="text-transform: none;"> (NT5, Heil PR35, MD421, 2x SM58, Audix D6, Beta91)</p><br>
-        <ul id="right">
+        </div>
+        <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;background-color: rgba(0, 0, 0, 0.86);padding:20px;padding-top: 50px;">SoundBullet Audio I/O</h2>
+        <p style="background-color: rgba(0, 0, 0, 0.86);">- Signalweg Tester -</p>
+        <br>
+        <a target="_blank" href="https://sonnectaudio.com/"></h2><img title="Sound Bullet von Sonnect Audio"style="height:350px;"src="https://gdurl.com/5EW2" alt=""></a>    
+        <li style="font-family: 'Roboto';font-size: 1em;"> <a src="https://sonnectaudio.com/"></a></li>
+      <ul style=" width:100%; background-color: rgba(0, 0, 0, 0.76); padding:50px;"id="list">
+        <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;margin:0px 10px 50px 20px;" >Zubehör </h2>
+        <li> ... Distanzlaser, Kabeltester, Werkzeuge (bei Bedarf) sowie PSA aus Helm, Sicherheitsschuhen und Handschuhen.</li>
+      </ul>
+      </ul>
+      </div>
+    </section>
+    <section id="equipment2">
+      <div class="container" style="width:100%;background: rgba(0, 0, 0, 0.5);">
+      <h1 id="header_eq">Equipment</h1>
+      <h2 style="text-transform:none;background-color: black; padding:10px;">Kostenpflichtiges Equipment auf Mietbasis: </h2>
+      <a href="#left2"> <img  id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="https://gdurl.com/7Otn" alt="" title="mehr Infos"></a>
+      <ul id="left2">
+        <br style="margin-bottom: 22vh;">
+      <div id="mixer">
+        <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Mixer</h2>
+        <br style="margin-bottom: 1vh;">
+        <li><p>Allen & Heath SQ6 48 Kanal digital Audio Mischpult mit allen Kompressoren & Dynamischen Audio - Plugins </p><br>
+       <a target="_blank" href="https://www.allen-heath.com/sq-series/sq-6/"><img title="allen-health-sq6"src="https://gdurl.com/BgQR" alt="allen-health-sq6"><br style="margin-bottom: 60px;"></a>
+      </div>
+      <div id="stagebox" style="margin-top:100px;text-align: center;height:100px;width:100%;padding-top:10px;">
+        <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Stagebox </h2>
+        <br style="margin-bottom: 1vh;">
+      </div>
+      <br>
+        <br style="margin-bottom: 1vh;">
+        <p style="margin:10px;">- 2x Allen & Heath DX168/X 96kHZ 16in / 8out Stageboxen</p>
+          <img style="height:400px;"title="stagebox von allen-heath"src="https://gdurl.com/pPLc" alt="Allen-health-Stagebox"><br style="height:400px;margin-bottom: 60px;">
+          <h3 style="margin-bottom:50px;font-size: 4em;font-family: 'Roboto', sans-serif;"></h3>
           <div id="zoom">
-            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Zubehör</h2>
+            <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Aufnahmegerät</h2>
+            <p style="margin-bottom: 50px;">Zoom H-6</p>
+           <a href="https://zoomcorp.com/de/de/handy-recorder/handheld-recorders/h6-audio-recorder/" target="_blank "><img src="https://gdurl.com/MTCS" alt=""></a> 
           </div>
-
-
-          
-         
-
-            <p style="font-size: 24px; text-align: center;"> 50m Cat5 & 10m Cat5</p>
-           </li>
-            </div>
-
-          <ul style=" width:100%;"id="list">
-
-          </ul>
-          </ul>
+        <div  style="padding:50px;background-color: rgba(0, 0, 0, 0.7);"id="smaart">
+          <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;margin:0px;">Smaart</h2>
+          <p>Sound System Messungs-,Optimisierungs- und Kontroll- Software.</p>
+         <a target="_blank" href="http://www.rationalacoustics.de"> <img style="height:150px;width:150px;border-radius: 50%;;"title="smaart" src="https://gdurl.com/sYRu" alt=""></a>
+          <li><p></p><br>
           </div>
-        </section>
-        <section id="service">
-          <h1 style="margin-top:300px;">Leistungen</h1>
-          <p style="background-color:black;width: 100%;padding: 10px;">Eine Buchung für einen Auftrag umfasst Leistungen rund um das Gewerk „Tontechnik“ im Veranstaltungsbereich.</p>
-          <br>
-
-
-          <a href="#container_leistungen"><img  title="mehr Infos"id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" alt=""></a>
-          <br id="leistungen">
-          <p style="height:400px;"></p>  
-        
-          </div>
-        <div id="container_leistungen" style="width:100%;height:1200px; background-color: rgba(0, 0, 0, 0.7);;">
-          <h2 style="margin-top:10vh;margin-bottom:-100px;font-size:3em;font-weight:600px;"> leistungen im Überblick </h2>
-          <div id="leistungendiv" style="margin-bottom:90px;">
-             <div id="leistung1">
-               <i class="fa fa-wrench" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
-
-            <h2>Auf/Abbau </h2>
-            <p>Zum Service gehört das Auf/Abbauen der für die Show relevanten Besandteile, wie Laptop, Mischpult, Equalizer, Mikrofone usw. </p>
-            </div>
-            <div id="leistung2">
-              <i class="fa fa-info-circle" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
-
-            <h2>Betreuung</h2>
-            <p>Betreuung der Technik während der Veranstaltung. Ansprechpartner vor Ort bei Fragen, Wünschen oder Problemen.</p>
-          </div>
-          <div id="leistung3">
-            <i class="fa fa-handshake-o" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
-
-
-            <h2>Dry Hire</h2>
-            <p >Mieten von professionellem Audio Equipment.Weiteres Equipment auf Anfrage möglich.</p>
-          </div>
-          </div>
-
-          <h3 style="margin:60px;">Buchen Sie mich direkt für ihre Veranstaltung, oder Kontaktieren sie mich für Fragen und Anliegen. </h3>
-          <button id="service-kontakt">Zum Kontaktformular</button>
-        </div>
-        </section>
-
-        
-  </section>
-        <section id="contact">
-
-        <h1>KONTAKT</h1>
-        <p style=" background-color:black;padding:10px;width:100%;margin-bottom: 20px;"class="lead">Kontaktieren sie mich über das Kontaktformular, oder per e-mail / telefon.</p>
-          <a href="#kontakt"><img  id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="assets/img/more.png" title="zum Kontaktformular"alt=""></a>
-          <br id="kontakt">
-
-
-          <br >
-
-           <!-- CONTACT FORM -->
-
-    <div id="KONTAKT">
-
-      <!--<h2 style="font-size:80px;margin:10px 20px 20px 20px;text-align:center;text-transform:none;font-family: 'Roboto', sans-serif;"">Kontaktformular</h2>-->
-      <div class="contact_container">
-             <form action="action_page.php" class="col-3">
-                <label for="name"></label>
-                <input style="text-align:start;"class="effect-1" type="text" id="fname" name="name" placeholder="Name"> 
-                <span class="focus-border"></span>         
-                <label for="email"><b></b></label>
-                <input style="text-align:start;"class="effect-1" type="text" placeholder="E-mail" name="email" id="email" required>
-                <span class="focus-border"></span>
-                </select>         
-                <label for="subject"></label>
-                <textarea style="text-align:start;" id="subject" name="subject" placeholder="Nachricht"></textarea>          
-                <input class="effect-1"type="submit" value="Senden">           
-              </form>
-            </div> 
-            <div id="contacts">              
-              <a  style="font-size:20px;float: left;" href="#"><i class="fa fa-send" style="font-size:28px;color:rosybrown"></i><p>info@Eisenhut-sound.de</p></a> 
-              <i  class="fa fa-phone" style="font-size:28px;color:rosybrown"></i>
-
-              <p style="font-size: 22px;" >+49 176 45885708</p>
-              
-            </div>   
-
+        <br style="margin-bottom: 5vh;">          
+      <h2 style="text-transform:none;font-size: 3em;font-family: 'Roboto', sans-serif;">Diverse Mikrofone</h2>
+        <li><p style="text-transform: none;"> (NT5, Heil PR35, MD421, 2x SM58, Audix D6, Beta91)</p><br>
+    <ul id="right">
+      <div id="zoom">
+        <h2 style="font-size: 3em;font-family: 'Roboto', sans-serif;">Zubehör</h2>
       </div>
-    </div>
-    </section>
-    <section id="footer">
-      <footer>
-        <div id="footer_content">
-
-      <div id="AGB">
-         <a target="_blank" href="agb/AGB.pdf">AGB</a>
-         <a target="_blank" href="impressum.html">Impressum</a>
+        <p style="font-size: 24px; text-align: center;"> 50m Cat5 & 10m Cat5</p>
+       </li>
         </div>
-
-         <div id="footer-kontakt" style="float:left;margin-bottom:-220px;">
-          <h5 style="margin:20px;">Kontakt</h5>
-          <i class="fa fa-phone" style="font-size:24px"></i>
-          <p>Tel: +49 176 45885708</p>
-          <i class="fa fa-send" style="font-size:24px"></i>
-          <p>E-Mail: info@Eisenhut-sound.de</p>
-          <i class="fa fa-map-marker" style="font-size:24px"></i>
-<p>Standort: München, Deutschland</p>
-
-<br>
-
-         </div>
-
- <nav >
-  
-
-</nav>
-
-         <p style="font-size: small;">&copy;   2022 DenisRysavy. Alle Rechte vorbehalten.</p>         
-         <a style="float:right;margin:10px 50px 20px 0px;"href="#home"><img src="assets/img/hoch.png" title="zum Anfang"alt=""></a>
-
-       </div>         
-     </footer>
-
+      <ul style=" width:100%;"id="list">
+      </ul>
+      </ul>
+      </div>
     </section>
-    </main>
-</body>
-
-<!--LOADER-->
+    <section id="service">
+      <h1 style="margin-top:300px;">Leistungen</h1>
+      <p style="background-color:black;width: 100%;padding: 10px;">Eine Buchung für einen Auftrag umfasst Leistungen rund um das Gewerk „Tontechnik“ im Veranstaltungsbereich.</p>
+      <br>
+      <a href="#container_leistungen"><img  title="mehr Infos"id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="https://gdurl.com/7Otn" alt=""></a>
+      <br id="leistungen">
+      <p style="height:400px;"></p>       
+      </div>
+    <div id="container_leistungen" style="width:100%;height:1200px; background-color: rgba(0, 0, 0, 0.7);;">
+      <h2 style="margin-top:10vh;margin-bottom:-100px;font-size:3em;font-weight:600px;"> leistungen im Überblick </h2>
+      <div id="leistungendiv" style="margin-bottom:90px;">
+         <div id="leistung1">
+           <i class="fa fa-wrench" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
+        <h2>Auf/Abbau </h2>
+        <p>Zum Service gehört das Auf/Abbauen der für die Show relevanten Besandteile, wie Laptop, Mischpult, Equalizer, Mikrofone usw. </p>
+        </div>
+        <div id="leistung2">
+          <i class="fa fa-info-circle" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
+        <h2>Betreuung</h2>
+        <p>Betreuung der Technik während der Veranstaltung. Ansprechpartner vor Ort bei Fragen, Wünschen oder Problemen.</p>
+      </div>
+      <div id="leistung3">
+        <i class="fa fa-handshake-o" style="font-size:100px;color:rosybrown;margin:50px auto;"></i>
+        <h2>Dry Hire</h2>
+        <p >Mieten von professionellem Audio Equipment.Weiteres Equipment auf Anfrage möglich.</p>
+      </div>
+      </div>
+      <h3 style="margin:60px;">Buchen Sie mich direkt für ihre Veranstaltung, oder Kontaktieren sie mich für Fragen und Anliegen. </h3>
+      <button id="service-kontakt">Zum Kontaktformular</button>
+    </div>
+    </section>      
+</section>
+    <section id="contact">
+    <h1>KONTAKT</h1>
+    <p style=" background-color:black;padding:10px;width:100%;margin-bottom: 20px;"class="lead">Kontaktieren sie mich über das Kontaktformular, oder per e-mail / telefon.</p>
+      <a href="#kontakt"><img  id="more" style="height:20px;width:35px;cursor:pointer;margin-top: 5vh;"src="https://gdurl.com/7Otn" title="zum Kontaktformular"alt=""></a>
+      <br id="kontakt">
+      <br >
+       <!-- CONTACT FORM -->
+<div id="KONTAKT">
+  <!--<h2 style="font-size:80px;margin:10px 20px 20px 20px;text-align:center;text-transform:none;font-family: 'Roboto', sans-serif;"">Kontaktformular</h2>-->
+  <div class="contact_container">
+         <form action="action_page.php" class="col-3">
+            <label for="name"></label>
+            <input style="text-align:start;"class="effect-1" type="text" id="fname" name="name" placeholder="Name"> 
+            <span class="focus-border"></span>         
+            <label for="email"><b></b></label>
+            <input style="text-align:start;"class="effect-1" type="text" placeholder="E-mail" name="email" id="email" required>
+            <span class="focus-border"></span>
+            </select>         
+            <label for="subject"></label>
+            <textarea style="text-align:start;" id="subject" name="subject" placeholder="Nachricht"></textarea>          
+            <input class="effect-1"type="submit" value="Senden">           
+          </form>
+        </div> 
+        <div id="contacts">              
+          <a  style="font-size:20px;float: left;" href="#"><i class="fa fa-send" style="font-size:28px;color:rosybrown"></i><p>info@Eisenhut-sound.de</p></a> 
+          <i  class="fa fa-phone" style="font-size:28px;color:rosybrown"></i>
+          <p style="font-size: 22px;" >+49 176 45885708</p>             
+        </div>
+  </div>
+</div>
+</section>
+<section id="footer">
+  <footer>
+    <div id="footer_content">
+  <div style="padding:10px;"id="AGB">
+     <a id="agb" target="_blank" href="https://gdurl.com/I3jY">AGB</a>
+     <br>
+     <img style="margin-top:50px;height:300px;width:300px;border-radius: 50%;"src="https://gdurl.com/WmHh" alt="eisenhut-sound-design">
+  </div>
+  <div  style="float:right;font-size:smaller;margin-right:5vw;margin-bottom:-220px;" id="impressum">
+     <h2>Impressum</h2>
+     <br>
+     <h3>Angaben gemäß § 5 TMG</h3>
+     <br>
+     <p>Denis Rysavy<br>
+      Wielandstraße 27<br>
+      28203 Bremen<br>
+    </p>
+    <h4>Kontakt</h4>
+    <p>Telefon: +49 1630100503<br>
+      E-Mail: rysavy@gmx.de<br>
+      Webseite: <a target="_blank" style="cursor: pointer;">rysavy122.github.io</a></p>
+  </div>
+     <div style="float:left;margin-left:5vw;"id="footer-kontakt" >
+      <h3 style="margin:20px;margin-left:20px;"> Kontakt Eisenhut</h3>
+      <br>
+      <i class="fa fa-phone" style="font-size:24px;margin-left: 50px;"><p>Tel: +49 176 45885708</p></i>    
+      <i class="fa fa-send" style="font-size:24px"><p>E-Mail: info@Eisenhut-sound.de</p></i> 
+      <i class="fa fa-map-marker" style="font-size:24px"><p>Standort: München, Deutschland</p></i>
+<br>
+</div>
+<nav >
+</nav>
+     <p id="all-rights">&copy;   2022 DenisRysavy. Alle Rechte vorbehalten.</p>         
+     <a style="float:right;margin:10px 50px 20px 0px;"href="#home"><img src="https://gdurl.com/XUp8k" title="zum Anfang"alt=""></a>
+   </div>         
+ </footer>
+</section>
+</main>
+<!-- JAVASCRIPT -->
 <script>
-  $(window).on("load",function(){
-$(".loader-wrapper").fadeOut("slow");
-});
-</script>
-<script>
-  $('body').append('<div style="" id="loadingDiv"><div class="loader"></div></div>');
-$(window).on('load', function(){
-  setTimeout(removeLoader, 10); //wait for page load PLUS two seconds.
-});
-function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( "#loadingDiv" ).remove(); //makes page more lightweight 
-  });  
-}
-</script>
-
-<!--SHRINK TOPNAV WHEN SCROLL-->
-<script>
-$(function(){
-  $(window).scroll(function() {
-     if($(window).scrollTop() >= 100) {
-       $('nav').addClass('scrolled');
-     }
-    else {
-      $('nav').removeClass('scrolled');
+  /*LOADER*/
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+    });
+    
+      $('body').append('<div style="" id="loadingDiv"><div class="loader"></div></div>');
+    $(window).on('load', function(){
+      setTimeout(removeLoader, 10); //wait for page load PLUS two seconds.
+    });
+    function removeLoader(){
+        $( "#loadingDiv" ).fadeOut(500, function() {
+          // fadeOut complete. Remove the loading div
+          $( "#loadingDiv" ).remove(); //makes page more lightweight 
+      });  
     }
-  });
-});
-</script>
-<!--UNDERLINE NAVBAR SHOW AKTIVE SECTION-->
-<script>
-    const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav .container ul li");
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
-      current = section.getAttribute("id");
-    }
-  });
 
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
-    }
-  });
-});
-</script>
-<script>
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
   }
-}
-</script>
-<script>
+    /* CLICKABLE DROPDOWN MENU*/
+    function dropFunction() {
+        document.getElementById("Drop",).classList.toggle("show");
+      }
+      function dropFunction2() {
+        document.getElementById("Drop2",).classList.toggle("show");
+      }
 
-document.getElementsByClassName("dropdown").addEventListener("click", function(e) {
-
-e.stopPropagation();
-});
-</script>
-<script>
-</script>
-<script>
-  $("#service-kontakt").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#kontakt").offset().top},
-        'slow');
-});
-</script>
-<script>
-  $("#bilder").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#container_bilder").offset().top},
-        'slow');
-});
-</script>
-<script>
-  var slideIndex = 1;
+      /*CLOSES DROPDOWN IF WINDOW IS CLICKED*/
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+          var Drop = document.getElementById("Drop");
+          var Drop2 = document.getElementById("Drop2");
+    
+          if (Drop.classList.contains("show")) {
+            Drop.classList.remove("show");
+          }
+          if (Drop2.classList.contains("show")) {
+            Drop2.classList.remove("show");
+          }
+        }
+      }
+      $("#bilder").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#container_bilder").offset().top},
+            'slow');
+    });
+    var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -675,7 +653,6 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -695,9 +672,33 @@ function showSlides(n) {
 }
 </script>
 <script>
-  function scrollDown();
-  window
-
+  $("#service-kontakt").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#kontakt").offset().top},
+        'slow');
+});
+</script>
+<script>
+  $("#bilder").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#container_bilder").offset().top},
+        'slow');
+});
+</script>
 </script>
 
+<!--SHRINK TOPNAV WHEN SCROLL-->
+<script>
+$(function(){
+  $(window).scroll(function() {
+     if($(window).scrollTop() >= 100) {
+       $('nav').addClass('scrolled');
+     }
+    else {
+      $('nav').removeClass('scrolled');
+    }
+  });
+});
+</script>
+</body>
 </html>
