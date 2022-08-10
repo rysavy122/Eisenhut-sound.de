@@ -75,16 +75,6 @@ a:hover {
   margin-bottom:50px;
 }
 
-#softwareHeader{
-  margin-top:200px;
-}
-
-
-
-
-
-
-
 #software img {
   height:80px;
   width: 80px;
@@ -194,6 +184,7 @@ a:hover {
       color: black;
       color:white;
       padding: 20px;
+      padding-top: 0px;
       margin:0px;
       text-decoration: none;
       width:219px;
@@ -232,9 +223,6 @@ a:hover {
   z-index: 1;
   background-color: rgb(98, 22, 22);
   transition-duration: 2s;
-
-
-
 }
 
 .show {
@@ -275,8 +263,6 @@ a:hover {
     }
     
   } 
-
-
   section {
     height: 100vh;
     width: 100%;
@@ -304,6 +290,11 @@ a:hover {
     background-color:rgba(0, 0, 0, 0.6);
     height:1200px;
   }
+
+  section#events2{
+    height:230vh;
+  }
+
   #events h1 {
     margin-top: 35vh;
   }
@@ -325,9 +316,17 @@ a:hover {
   
   #ubiqui  h2{
       margin-top: 50px;
+
   }
 
-    
+  #img_soundbullet {
+    height:350px;
+  }
+
+  #img_stagebox{
+    height:400px;
+  }
+
   
   #service {
     background: url('https://gdurl.com/aGja') no-repeat center center/cover;
@@ -356,6 +355,7 @@ a:hover {
     overflow-y: hidden;
     margin-bottom: 10vh;
     margin-top:35vh;
+    font-size: 5em;
   }
   .container {
     /* CSS Smooth Scroll*/
@@ -377,17 +377,159 @@ a:hover {
   
   #header_eq{
     margin-top: 36vh;
-  
+    font-size: 5em;
   }
   
-  h1 {
-    font-size: 6rem;
-    margin-bottom:60px;
-  }
   section#about h1{
     font-size: 5rem;
     margin-bottom: 12vh;
   }
+
+  #text_equipment2{
+    background-color: black; 
+    padding:10px;
+  }
+
+  #header_zubehör {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    margin:0px 10px 50px 20px;
+  }
+
+  #header_smaart{
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+  }
+  #header_leistungen{
+    margin-top: 300px;
+    margin-bottom: 100px;
+    font-size: 5em;
+  }
+
+  #leistungen_text{
+    background-color:black;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #wrench, #circle, #handshake{
+    font-size:100px;
+    color:rosybrown;
+    margin:50px auto;
+  }
+
+
+  @media screen and (max-width:600px) {
+    h3#text_buchung{
+      margin:60px;  
+      font-size: smaller;  
+    }
+    section#contact h1 {
+      text-align: center;
+      /*border-bottom: 5px solid rgb(130,120,110);*/
+      overflow-y: hidden;
+      margin-bottom: 5h;
+      margin-top:25vh;
+      font-size: 3em;
+      height:200px;
+    }
+  
+  
+    section#about h1{
+      font-size: 3rem;
+      margin-bottom: 12vh;
+    }
+    h3#text_buchung{
+      width:90%;
+      margin:auto;
+
+    }
+
+    #wrench, #circle, #handshake{
+      font-size:40px;
+      color:rosybrown;
+      margin:10px auto;
+    }
+    #leistung1,#leistung2,#leistung3{
+      width:100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    #leistung1 h2, #leistung2 h2, #leistung3 h2 {
+      font-size: 18px;
+      margin-top:15px;
+    }
+    
+    #leistungen_text{
+      background-color:black;
+      width: 100%;
+      padding: 10px;
+      font-size: smaller;
+    }
+  
+    #text_equipment2{
+      background-color: black; 
+      padding:10px;
+      font-size: smaller;
+    }
+  
+    #header_leistungen{
+      margin-top: 300px;
+      margin-bottom: 100px;
+      font-size: 2em;
+    }
+
+    #text_smaart{
+      font-size:smaller;
+    }
+
+    #header_zubehör {
+      font-size: 2em;
+      font-family: 'Roboto', sans-serif;
+      margin:0px 10px 50px 20px;
+    }
+
+
+  #img_soundbullet {
+    height:150px;
+  }
+
+  #img_stagebox{
+    height:100%;
+    width:90%;
+  }
+
+
+  #header_smaart{
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+  }
+
+
+
+
+  #img_zoom{
+    height:400px;
+    width:200px;
+    margin-right:5%;
+  }
+
+      
+  #header_eq{
+    margin-top: 36vh;
+    font-size: 2.5em;
+  }
+
+  #header_zubehör {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif; 
+  }
+  }
+
+
   section#footer {
     background-color: crimson;
     background-color: black;
@@ -406,14 +548,6 @@ a:hover {
     transition:0.5s;
   }
   
-  @media screen and (max-width: 600px) {
-  #logoNAV{
-    height:35px;
-  }
-  
-  }
-  
-  
   #logo{
     font-size: 93px;
     font-family: 'Readex Pro', sans-serif;
@@ -428,8 +562,8 @@ a:hover {
     margin-top:25vh;
     width:45%;
     height:680px;
-  }
-  
+    animation: fade;
+  } 
   #logotop{
     font-size: 130px;
     text-transform: none;
@@ -444,10 +578,22 @@ a:hover {
       font-size: 10px;
     }
   
+    #footer_content{
+      background-color:black;
+      height:fit-content;
+      font-size: 10px;
+    }
     #logotop{
-      font-size: 90px;
+      font-size: 60px;
       text-transform: none;
+      text-align: center;
   
+    }
+    h1#logo {
+      font-size: 60px;;
+      text-transform: none;
+      text-align: center;
+
     }
   }
   
@@ -501,7 +647,19 @@ a:hover {
   #container_leistungen p {
     text-align:justify;
   }
+
+  #header_leistungen2{
+    margin-top:10vh;
+    margin-bottom:-100px;
+    font-size:3em;
+    font-weight:600px
+  }
   
+  #container_leistungen{
+    width:100%;
+    height:1200px; 
+    background-color: rgba(0, 0, 0, 0.7);
+  }
   
   @keyframes start{
     0%{
@@ -523,18 +681,22 @@ a:hover {
     background: rgba(0,0,0,0.9);
   }
 
-  @media screen and(max-width:600px){
-    nav{
-      position: fixed;
-      top: 0;
-      z-index: 1;
+  @media screen and (max-width:600px){
+
+    #container_leistungen{
+      width:100%;
+      height:100%; 
+      background-color: rgba(0, 0, 0, 0.7);
       display: flex;
-      width: 100%;
-      font-size: 20px;
-      background: rgba(0,0,0,0.9);
-      transition-duration: 2s;
-      
+      flex-direction: column;
     }
+
+  #header_leistungen2{
+    margin-top:10vh;
+    margin-bottom:-100px;
+    font-size:1em;
+    font-weight:600px
+  }
   }
 
   ul#left a {
@@ -555,12 +717,7 @@ a:hover {
     nav .topnav ul a {
       font-size: 25px;
     }
-  }
 
-    @media screen and (max-width:600px){
-      nav .topnav ul a {
-        transition: 2s;
-    }
   }
   section {
     display: flex;
@@ -587,8 +744,68 @@ a:hover {
     height:630px;
     margin:50px;
     margin-top:0px;
-  
   } 
+
+  #icon_send,#icon_phone{
+    font-size:28px;
+    color:rosybrown
+  }
+
+  #contacts p {
+    font-size: 22px;
+  }
+
+  #footer_img {
+    margin-top:50px;
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width:600px) {
+    #contacts p {
+      font-size: 14px;
+
+    }
+
+    #footer_img {
+      margin-top:25px;
+      margin-bottom:25px;
+      height:150px;
+      width:150px;
+      border-radius: 50%;
+    }
+  
+
+    #icon_send,#icon_phone{
+      font-size:20px;
+      color:rosybrown
+    }
+  
+
+    div#KONTAKT{
+      width:95%;
+    }
+
+    .contact_container {
+      border-radius: 5px;
+      background-color: #1d1a1a5e;
+      border-style: none;
+      padding: 10px;
+      opacity: 0.9;
+      text-align: left;
+      color:#dfd2d2;
+      width: 100%;
+      height:100%;
+      margin:10px;
+      margin-top:0px;
+    
+    } 
+
+    section#contact{
+      height:fit-content;
+    }
+  }
   #KONTAKT{
     margin-top:20vh;
     width:80%;
@@ -635,13 +852,11 @@ a:hover {
   margin-bottom:50px;
   margin-top:55px;
   margin:100px;
-  
   }
   #service-kontakt:hover{
     color:rosybrown;
     color:black;
-    border:1px solid white;
-  
+    border:1px solid white; 
   }
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
@@ -698,6 +913,7 @@ a:hover {
     position:static;
     font-size:0.6rem;
   }
+
   
   #footer-kontakt p{
   
@@ -705,17 +921,48 @@ a:hover {
     text-align:start;
     height:10px;
   }
+  #header_footer{
+    margin:20px;
+    margin-left:20px;
+
+  }
   #footer-kontakt{
     display: flex;
     flex-direction: column;
     align-items: start;
-  
+    float:left;
+    margin-left:5vw;
   }
-  
-  #footer-kontakt i {
-   margin-left:10px;
+  #footer_icon1{
+    font-size:24px;
+    margin-left: 50px;
+
   }
+
+  #footer_icon2, #footer_icon3{
+    font-size:24px;
+
+  }
+
+  @media screen and (max-width:600px){
+    #footer_icon1 p, #footer_icon1{
+      font-size:8px; 
+      margin-left:15px;
+    }
+
+    p#all-rights{
+      font-size: 8px;
+      margin-top:300px;
+
+    }
+
   
+    #footer_icon2 p , #footer_icon3 p, #footer_icon2, #footer_icon3{
+      font-size:8px;
+  
+    }
+
+  }
   
   button {
     border:none;
@@ -729,8 +976,6 @@ a:hover {
     margin-bottom: 15px;
     word-wrap: break-word;
     max-width: 100%;
-  
-  
   }
 
   #Previews
@@ -745,19 +990,25 @@ a:hover {
 #video{
   margin-left: 5%;
   }
-  
-  
   /* Clearfix (clear floats) */
   :after {
     content: "";
     clear: both;
     display: table;
   }
-  
+
   h1#portfolio{
     font-size: 6rem;
   }
   
+
+  @media screen and (max-width:600px) {
+    h1#portfolio{
+      font-size: 3rem;
+    }
+  }
+  
+
   .landing{
     font-size: 6rem;
     margin:1px; 
@@ -810,8 +1061,7 @@ a:hover {
       border: none;
       line-height: 0;
     }
-  
-  
+
   /* Media Queries - This is the responsive grid. */
   
   @media (max-width: 1024px) {
@@ -972,10 +1222,10 @@ p {
 }
 
 /*BILDER-GALLERY*/
-
-
 .container_bilder {
   position: relative;
+  width:90%;
+  margin:auto;
 }
 
 /* Hide the images by default */
@@ -1126,3 +1376,387 @@ ul .active {
   height:auto;
   width:100%;
 }
+
+
+#text_about{
+  margin:50px;
+  width:60%;
+  }
+
+  #video-header {
+    margin-top:6vh;
+    font-size: 5em;
+    margin:100px;
+  
+  }
+
+  iframe {
+    width:100%;
+    height:300;
+  }
+
+  #bilder
+  {
+    width:100%;
+    height:260vh;
+    background-color: black;
+  }
+
+#header-bilder{
+  margin:100px;
+  font-size:5em;
+  margin-top: 200px;
+}
+
+.fullscreen_imgage {
+  margin-top:200px;
+  width:300px;
+}
+
+
+#container_bilder{
+  margin:100px 10px 400px 10px;
+
+}
+
+
+#softwareHeader{
+  margin-top:200px;
+  margin-bottom:50px;
+  font-size: 4em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#image_ipad
+{
+  margin-bottom:100px;
+  height:400px;
+}
+
+#ubiqui{
+  background:rgba(0, 0, 0, 0.6);
+  margin:20px 20px 100px 20px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#header_ipad {
+  width:35%; 
+  font-size: 3em;
+  margin-right:0px;
+  margin-left:30%;
+  text-transform: none;
+}
+
+h2#header_ubiquiti{
+  text-transform:none;
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  margin-left:30%;
+
+}
+
+#text_ipad{
+  text-transform: none;
+  width:60%;
+  margin-right:0px;
+  margin-left:12vw;
+  margin-top:50px;
+
+}
+
+#text_ubiquiti{
+  text-transform: none;
+  width:60%;
+  margin-left:12vw;
+  margin-top:50px;
+
+}
+
+#img_ubiqui{
+  margin-left:10vw;
+  height: 200px;
+}
+
+#soundbullet{
+  text-transform:none;
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0.86);
+  padding:20px;
+  padding-top: 50px;
+}
+
+#equipment_text{
+ background-color: black; 
+ padding:10px;
+}
+
+#header_mixer{
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header_stagebox{
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header_aufnahme{
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#text_contact{
+  background-color:black;
+  padding:10px;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  section#footer {
+    background-color: crimson;
+    background-color: black;
+
+  }
+
+
+  
+#logoNAV{
+  height:35px;
+}
+#header_mixer{
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+#equipment_text{
+  background-color: black; 
+  padding:10px;
+  font-size: smaller;
+ }
+
+#header_aufnahme{
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+#text_contact{
+  background-color:black;
+  padding:10px;
+  width:100%;
+  margin-bottom: 20px;
+  font-size: smaller;
+}
+
+
+#header_stagebox{
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#service-kontakt{
+  cursor:pointer;
+  border:1px solid rosybrown;
+  padding:10px;
+  letter-spacing: 0.3em;
+  font-size: 10px;
+  margin-bottom:50px;
+  margin-top:55px;
+  margin:100px;
+
+  }
+  #service-kontakt:hover{
+    color:rosybrown;
+    border:1px solid white; 
+  }
+
+
+
+#img_mixer{
+  width:90%;
+}
+section#about
+{
+  overflow-y: scroll;
+}
+#soundbullet{
+  text-transform:none;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0.86);
+  padding:20px;
+  padding-top: 50px;
+}
+
+
+#image_ipad
+{
+  margin-bottom:100px;
+  width:100%;
+  height:100px;
+  margin-top:0px;
+}
+
+
+#img_ubiqui{
+  margin-left:10vw;
+  margin-top:100px;
+  height:200px;
+}
+
+
+#text_ipad{
+  text-transform: none;
+  width:60%;
+  margin-right:0px;
+  margin-top:50px;
+  font-size: small;
+  margin-left:25vw;
+
+}
+
+#text_ubiquiti{
+  text-transform: none;
+  width:60%;
+  margin-top:50px;
+  font-size: small;
+  margin-right:100px;
+  text-align: center;
+
+}
+#ubiqui{
+  background:rgba(0, 0, 0, 0.6);
+  margin:20px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  max-width:90%;
+  overflow-y: hidden;
+}
+
+h2#header_ubiquiti{
+  text-transform:none;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  margin-left:12vw;
+}
+
+#header_ipad {
+  width:35%; 
+  font-size: 1.2em;
+  margin-right:25%;
+  margin-left:30vw;
+  text-transform: none;
+}
+
+#softwareHeader{
+  margin-top:200px;
+  margin-bottom:50px;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+h2#header_zubehör {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif; 
+}
+
+
+
+#text_about {
+  width:90%;
+  margin:50px;
+  padding:10px;
+  margin-bottom:150px;
+}
+h2#video-header {
+  margin-top:6vh;
+  font-size:2em;
+  margin:100px;
+}
+
+#macbook {
+  width:90%;
+}
+h2#header-bilder{
+  margin:100px;
+  font-size:2em;
+  margin-top: 200px;
+}
+iframe {
+  width:100%;
+  height:400;
+}
+.container_bilder {
+  position: relative;
+  width:90vw;
+  height:30%;
+  margin:auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 60vh;
+}
+.mySlides img {
+  height:350px;
+  width:90vw;
+  margin-top:500px;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top:135vh;
+  width: 10;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+p.leistung_text{
+  font-size: 6px;
+}
+#leistung3 p.leistung_text,
+#leistung2 p.leistung_text,
+#leistung1 p.leistung_text{
+  font-size: 12px;
+  width:fit-content;
+  overflow: hidden;
+  text-align: justify;
+  margin:auto;
+  margin-top:20px;
+}
+#leistungendiv {
+  background-color:black;
+  height:350px;
+  width:100%;
+  display: flex;
+  flex-direction: row; 
+  margin-top:20vh; 
+  margin-left:auto;
+  margin-right:20px;
+
+}
+
+}
+
+
