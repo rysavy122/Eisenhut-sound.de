@@ -361,8 +361,16 @@ a:hover {
     /* CSS Smooth Scroll*/
     overflow-y: scroll; 
     scroll-behavior: smooth;
-    /*scroll-snap-type: y mandatory;
-    /*scroll-padding: 100px;*/
+    scroll-snap-type: y mandatory;
+    scroll-padding: 100px;
+  }
+
+  section#home{
+    scroll-snap-align: start;
+  }
+
+  section {
+    scroll-snap-align:start;
   }
   
   section#events .container{
@@ -1709,6 +1717,16 @@ iframe {
   height:350px;
   width:90vw;
   margin-top:500px;
+}
+
+@media screen and (min-width:800px) {
+  .mySlides img {
+    height:350px;
+    width:90vw;
+    margin-top:200px;
+  }
+
+
 }
 /* Next & previous buttons */
 .prev,
